@@ -1,6 +1,6 @@
 # Javascript async flow control
 
-This is a simple API to make it possible to wait on the completion of parallel tasks. That goal is not really possible in Javascript, but a solution inspired on Apple's Grand Central Dispatch API, namely [dispatch groups](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/dispatch_group_notify.3.html) is quite simple to achieve.
+This is a simple API to make it possible to wait on the completion of parallel tasks. That goal is not really possible in plain Javascript (though there are a number of libraries to do it), but a solution inspired on Apple's Grand Central Dispatch API, namely [dispatch groups](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/dispatch_group_notify.3.html) is quite simple to achieve.
 
 ## How to use
 First of all, create a `DispatchGroup` object each time you wish to run a number of async tasks:
